@@ -38,6 +38,7 @@ slightly wider recipes icon images maybe?
 Check the header code, needs sorting. 
 Header icon needs to be styled differently to the recipe bookmark icons 
 
+If I add loads of recipes to the bookmark tab, when you view the modal it takes up the whole screen and you cannot get to the close button without removing some recipes. Instead impliment a scroll feature for the saved recipes. 
 
 Dev testing: 
 when viewing on mobile can you still see the saved recipes icon in the header 

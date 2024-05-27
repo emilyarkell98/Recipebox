@@ -1,5 +1,6 @@
 # Recipebox
 
+Emily's notes: 
 RecipeBox Prototype requirements: 
 
 White-label receipes web app with a quick turnaround time. Give the client a feel for the web app. 
@@ -25,20 +26,20 @@ Testing this style by using inspect, dev tools toggle element to view the layout
 Missing requirements/ ran out of time to do: 
 Saved recipes counter 
 
+
 Things that need fixing pre handover: 
 
-Modal close button needs to be displyed in a clear format 
+Modal close button needs to be displyed in a clear format.-done 
+The remove buttons in the modal need to be dispalyed to the right/end.
+Saved recipes modal title centred and the line below full length.- done
 
-the remove buttons in the modal need to be dispalyed to the right/end 
 
-saved recipes modal title centred and the line below full length 
-
-slightly wider recipes icon images maybe? 
-
-Check the header code, needs sorting. 
 Header icon needs to be styled differently to the recipe bookmark icons 
 
 If I add loads of recipes to the bookmark tab, when you view the modal it takes up the whole screen and you cannot get to the close button without removing some recipes. Instead impliment a scroll feature for the saved recipes. 
+The recipe list titles need to fit the size of the image squares so that the bookmark buttons are all still alligned. This is especially important if viewing on mobile. 
+
+Tried to add mobile styling, which did help with the images however need to look at the sizing of the modal etc
 
 Dev testing: 
 when viewing on mobile can you still see the saved recipes icon in the header 

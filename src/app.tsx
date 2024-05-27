@@ -4,6 +4,7 @@ import RecipeList from './components/RecipeList';
 import BookmarkModal from './components/BookmarkModal';
 import { BookmarkIcon as BookmarkIconSolid } from '@heroicons/react/24/solid';
 import './styles/Styles.css';
+import Header from './components/Header';
 
 const App: React.FC = () => {
   const [showBookmarks, setShowBookmarks] = useState(false);
@@ -11,12 +12,7 @@ const App: React.FC = () => {
   return (
     <BookmarkProvider>
       <div className="App">
-        <header className="header">
-          <div className="header-title">Recipe Box</div>
-          <button className="bookmark-button" onClick={() => setShowBookmarks(true)}>
-            <BookmarkIconSolid className="bookmark-icon" />
-          </button>
-        </header>
+      <Header onBookmarkClick={() => setShowBookmarks(true)} />
         <RecipeList />
         {showBookmarks && <BookmarkModal onClose={() => setShowBookmarks(false)} />}
       </div>

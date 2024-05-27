@@ -1,21 +1,17 @@
-import React, { useState } from 'react';
-import { BookmarkIcon } from '@heroicons/react/24/solid';
-import '../styles/Styles.css';
+import React from 'react';
+import { BookmarkIcon as BookmarkIconSolid } from '@heroicons/react/24/solid';
 
-const Header: React.FC = () => {
-  const [showBookmarks, setShowBookmarks] = useState(false);
+interface HeaderProps {
+  onBookmarkClick: () => void;
+}
 
-  const toggleBookmarks = () => {
-    setShowBookmarks(!showBookmarks);
-  };
-
+const Header: React.FC<HeaderProps> = ({ onBookmarkClick }) => {
   return (
     <header className="header">
-      <h1 className="header-title">Recipe Boxssfdf</h1>
-      <button onClick={toggleBookmarks} className="bookmark-button-header">
-        <BookmarkIcon className="header-bookmark-icon" />
+      <div className="header-title">RECIPEBOX</div>
+      <button className="bookmark-button" onClick={onBookmarkClick}>
+        <BookmarkIconSolid className="bookmark-icon" />
       </button>
-      {showBookmarks}
     </header>
   );
 };

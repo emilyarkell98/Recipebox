@@ -1,0 +1,194 @@
+/* Recipe list */
+.recipe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-gap: 20px;
+    padding: 10px;
+  }
+  
+  .recipe-square {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .recipe-image {
+    width: 200px; 
+    height: 200px; 
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 100%;
+  }
+  
+  .recipe-title {
+    font-size: 18px; 
+    font-weight: normal; 
+    margin: 0;
+    margin-right: 10px; 
+  }
+  
+  .bookmark-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  .bookmark-icon {
+    width: 24px; 
+    height: 24px; 
+    color: #555; 
+    border-radius: 50%; 
+    background-color: #e0e0e0; 
+    padding: 3px; 
+  }
+  
+  /* Header styles */
+  .header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .header-title {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    flex-grow: 1; 
+  }
+  
+  .header .bookmark-button {
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px; 
+  }
+  
+  .header .bookmark-icon {
+    width: 30px;
+    height: 30px;
+    color: #fff;
+  }
+  
+  /* Bookmark List Styles */
+  .bookmark-list {
+    position: absolute;
+    top: 50px; 
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 10px;
+    z-index: 1000;
+  }
+  
+  .bookmark-item {
+    padding: 5px 0;
+  }
+  
+  .no-bookmarks {
+    color: #888;
+  }
+ 
+/* Modal Styles */
+.bookmark-modal {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 2000;
+}
+
+.bookmark-modal-content {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bookmark-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 20px; 
+}
+
+.bookmark-modal-title {
+    font-size: 24px;
+    font-weight: bold;
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.bookmark-modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff; 
+    margin-left: auto; 
+}
+
+.bookmark-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bookmark-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 20px; 
+}
+
+.bookmark-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.bookmark-item-title {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.bookmark-item button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
